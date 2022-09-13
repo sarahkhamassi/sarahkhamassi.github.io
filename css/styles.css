@@ -110,6 +110,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 50%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  font-family: 'Lora', serif;
 }
 
 hr {
@@ -11366,6 +11367,22 @@ html {
 .divider-custom.divider-light .divider-custom-icon {
   color: 323232 ;
 }
+
+.title{
+
+ margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content-description{
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+ 
+  
+}
+
 
 .btn-xl {
   padding: 1rem 1.75rem;
