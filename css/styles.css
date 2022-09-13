@@ -76,6 +76,29 @@
   }
 }
 
+#softwareng
+{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #5B52FF; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #5B52FF; }
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -85,7 +108,7 @@ body {
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 50%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -11334,7 +11357,7 @@ html {
   margin-left: 1rem;
 }
 .divider-custom .divider-custom-icon {
-  color: 323232;
+  color: #323232;
   font-size: 2rem;
 }
 .divider-custom.divider-light .divider-custom-line {
