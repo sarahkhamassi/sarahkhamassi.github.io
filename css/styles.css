@@ -130,6 +130,10 @@ i.flag:before, i.flag:not(.icon) {
   50% { border-color: #5B52FF; }
 }
 
+
+
+
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -11576,13 +11580,29 @@ html {
 }
 
  .skill-item {
-  background-color: #777778;
+  background-color: #dee2e6;
   position: relative;
   display: block;
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 300px;
+  height: 200px; 
 }
+
+ul {
+  list-style: none;
+  position:sticky;
+}
+ .skills-name>ul>li:before {
+  content: "☑";
+  color:#343a40;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  margin-right: 3px;
+}
+
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
