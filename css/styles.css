@@ -11579,22 +11579,65 @@ html {
   }
 }
 
+.img{
+  background-color: #dee2e6;
+  position: relative;
+  max-width: 25rem;
+  border-radius: 0.5rem;
+  width: 300px;
+  height: 400px; 
+  transition: transform .1s;
+}
+
+
+
+
  .skill-item {
   background-color: #dee2e6;
   position: relative;
-  display: block;
   max-width: 25rem;
   border-radius: 0.5rem;
-  overflow: hidden;
   width: 300px;
   height: 200px; 
+  transition: transform .1s;
 }
+
+.skill-item:hover{
+  /* transform: scale(1.05); */
+  /* overflow: hidden; */
+}
+
+.skill-item:before{
+  content:"";
+  position :absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  
+  
+}
+.skill-item:after{
+  content:"";
+  position :absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background-color: #adb5bd;
+  z-index: -1;
+  filter: blur(5px);
+   background: linear-gradient(238deg,#6f42c1,#fff,#0d6efd); 
+  
+}
+
 
 ul {
   list-style: none;
   position:sticky;
 }
- .skills-name>ul>li:before {
+ .skills-name>ul>li:before { 
   content: "☑";
   color:#343a40;
   font-size: 14px;
